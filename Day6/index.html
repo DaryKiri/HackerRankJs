@@ -1,0 +1,53 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/buttonsGrid.css" type="text/css">
+        <title>Buttons Grid</title>
+    </head>
+    <body>
+        <div id="btns">
+            <button id="btn1" class="bs">1</button>
+            <button id="btn2" class="bs">2</button>
+            <button id="btn3" class="bs">3</button>
+            <button id="btn4" class="bs">4</button>
+            <button id="btn5" class="bs">5</button>
+            <button id="btn6" class="bs">6</button>
+            <button id="btn7" class="bs">7</button>
+            <button id="btn8" class="bs">8</button>
+            <button id="btn9" class="bs">9</button>
+        </div>
+        <script>
+            var b1 = document.getElementById("btn1");
+            var b2 = document.getElementById("btn2");
+            var b3 = document.getElementById("btn3");
+            var b4 = document.getElementById("btn4");
+            var b5 = document.getElementById("btn5");
+            var b6 = document.getElementById("btn6");
+            var b7 = document.getElementById("btn7");
+            var b8 = document.getElementById("btn8");
+            var b9 = document.getElementById("btn9");
+            
+            b5.onclick = function(){
+                var aux = b2.innerHTML;
+                var aux1;
+                b2.innerHTML = b1.innerHTML;
+                aux1 = b3.innerHTML;
+                b3.innerHTML = aux;
+                aux = b6.innerHTML;
+                b6.innerHTML = aux1;
+                aux1 = b9.innerHTML;
+                b9.innerHTML = aux;
+                aux = b8.innerHTML;
+                b8.innerHTML = aux1;
+                aux1 = b7.innerHTML;
+                b7.innerHTML = aux;
+                aux = b4.innerHTML;
+                b4.innerHTML = aux1;
+                b1.innerHTML = aux;
+            };
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,41 @@
+/* Estilo de el contenido del resultado */
+div#res {
+  background-color: lightgray;
+  border-style: solid;
+  width: 81%;
+  height: 48px;
+  font-size: 20px;
+}
+
+/* Estilo del contenedor de botones */
+
+div#btns {
+  width: 90%;
+}
+
+/* Estilo aplicado a todos los botones */
+
+button.buttons {
+  width: 22%;
+  height: 36px;
+  font-size: 18px; 
+}
+
+/* Estilo aplicado a los botones uno a uno individualmente */
+
+button#btn0, button#btn1 {
+  background-color: lightgreen;
+  color: brown;
+}
+
+button#btnClr, button#btnEql {
+  background-color: darkgreen;
+  color: white;
+}
+
+button#btnSum, button#btnSub, button#btnMul, button#btnDiv {
+  background-color: black;
+  color: red;
+}
+
+
